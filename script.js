@@ -23,20 +23,35 @@ function playRound(userInput, computerInput) {
     console.log(
       `User choice is ${userInput}, computer choice is ${computerInput}, Draw game!`
     );
-  } else if (userInput === "rock" && computerInput === "paper") {
+  } else if (userInput === "scissors" && computerInput === "paper") {
     console.log(
-      `User choice is ${userInput}, computer choice is ${computerInput}, you lose! `
+      `User choice is ${userInput}, computer choice is ${computerInput}, you win! `
     );
   } else if (userInput === "rock" && computerInput === "scissors") {
     console.log(
       `User choice is ${userInput}, computer choice is ${computerInput}, you win! `
     );
+  } else if (userInput === "paper" && computerInput === "rock") {
+    console.log(
+      `User choice is ${userInput}, computer choice is ${computerInput}, you win! `
+    );
+  } else if (userInput === "paper" && computerInput === "scissors") {
+    console.log(
+      `User choice is ${userInput}, computer choice is ${computerInput}, you lose! `
+    );
+  } else if (userInput === "scissors" && computerInput === "rock") {
+    console.log(
+      `User choice is ${userInput}, computer choice is ${computerInput}, you lose! `
+    );
+  } else if (userInput === "rock" && computerInput === "paper") {
+    console.log(
+      `User choice is ${userInput}, computer choice is ${computerInput}, you lose! `
+    );
   }
 }
 
-function game()
-
-
-const computer = computerPlay();
-const user = userPlay();
-const game1 = playRound(user, computer);
+for (let i = 0; 5 <= computer; i++) {
+  const computer = computerPlay();
+  const user = userPlay();
+  const game1 = playRound(user, computer);
+}
