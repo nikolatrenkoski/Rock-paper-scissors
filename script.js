@@ -64,3 +64,6 @@ for (let i = 0; i < 5; i++) {
   const user = userPlay();
   const game1 = playRound(user, computer);
 }
+if (userScore > computerScore) {
+  console.log("user win");
+} else console.log("computer win");
